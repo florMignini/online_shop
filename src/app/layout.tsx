@@ -15,7 +15,15 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <div className='home-layout-container'>
+        {/* todo: Sidebar */}
+          <div className='home-layout-content-section'>
+            {/* todo: navbar */}
+            {children}
+          </div>
+        </div>
+        </body>
     </html>
   )
 }

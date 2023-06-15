@@ -16,3 +16,14 @@ body {
 }
 
 
+.home-layout-container{
+  display: grid;
+  grid-template-columns: 7% 93%;
+}
+.home-layout-content-section{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}

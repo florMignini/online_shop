@@ -1,9 +1,15 @@
 .nav-container {
-    width: 99.5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    border: 1px solid var(--dark-color);
+    height: 100vh;
     border-radius: var(--smooth-border);
     text-align: center;
     margin: 0 auto;
     height: 80px;
-    background-color: var(--dark-color);
+    background-color: transparent;
+    backdrop-filter: blur(15px);
     color: azure;
 }

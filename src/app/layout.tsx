@@ -17,12 +17,16 @@ export default function RootLayout({
     return (
         <html lang="en">
             <body className={inter.className}>
-                <div className="home-layout-container">
-                   <h1>Hello, Im a sidebar</h1>
-                <div className="home-layout-content-section">
-                    <Navbar />
-                    {children}
-                </div>
+                <div className="home-background-image">
+                    <div className="home-layout-container">
+                        <h1 style={{
+                          color: '#ffffff',
+                        }}>Hello, Im a sidebar</h1>
+                        <div className="home-layout-content-section">
+                            <Navbar />
+                            {children}
+                        </div>
+                    </div>
                 </div>
             </body>
         </html>

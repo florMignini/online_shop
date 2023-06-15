@@ -1,0 +1,9 @@
+.nav-container {
+    width: 99.5%;
+    border-radius: var(--smooth-border);
+    text-align: center;
+    margin: 0 auto;
+    height: 80px;
+    background-color: var(--dark-color);
+    color: azure;
+}

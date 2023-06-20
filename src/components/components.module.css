@@ -63,6 +63,7 @@
     align-items: center;
     justify-content: center;
     border: 1px solid var(--secondary-color);
+    cursor: pointer;
 }
 
 /* Sidebar styles  */

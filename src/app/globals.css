@@ -1,10 +1,15 @@
 :root {
   /* colors styles */
   --dark-color: #1f1f1f;
+  --secondary-color: #6d6d6d;
+  --hover-color: #5d5d5d;
 
 
   /* components styles */
   --smooth-border: 5px;
+
+  /* font */
+  --sm: 14px;
 }
 
 

@@ -1,4 +1,4 @@
-import { MenuItem } from "./MenuItem";
+
 import navStyles from "./components.module.css";
 import { HiSearch, HiOutlineUser } from "react-icons/hi";
 import { FiShoppingBag } from "react-icons/fi";

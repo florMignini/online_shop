@@ -36,7 +36,7 @@ body {
   position: relative;
   background-color: rgba(0,0,0,0.7);
   display: grid;
-  grid-template-columns: 7% 93%;
+  grid-template-columns: 5% 95%;
 
 }
 .home-layout-content-section{

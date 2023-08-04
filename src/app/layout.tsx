@@ -1,13 +1,13 @@
 import { Navbar } from "@/components/Navbar";
 import "./globals.css";
-import { Inter } from "next/font/google";
+import { Urbanist } from "next/font/google";
 import { Sidebar } from "@/components/Sidebar";
 
-const inter = Inter({ subsets: ["latin"] });
+const font = Urbanist({ subsets: ["latin"] });
 
 export const metadata = {
-    title: "Online Shop",
-    description: "Welcome to online shop. Your favorite shopping site",
+    title: "Online-Shop",
+    description: "Welcome to online-shop. Your favorite online shop store",
 };
 
 export default function RootLayout({
@@ -17,7 +17,7 @@ export default function RootLayout({
 }) {
     return (
         <html lang="en">
-            <body className={inter.className}>
+            <body className={font.className}>
                 <div className="home-background-image">
                     <div className="home-layout-container">
                         <Sidebar/>

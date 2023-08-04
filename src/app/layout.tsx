@@ -1,7 +1,9 @@
-import { Navbar } from "@/components/Navbar";
+import 'tailwindcss/tailwind.css'
 import "./globals.css";
+
+import { Navbar, Sidebar, Footer } from "@/components";
 import { Urbanist } from "next/font/google";
-import { Sidebar } from "@/components/Sidebar";
+
 
 const font = Urbanist({ subsets: ["latin"] });
 
@@ -18,13 +20,13 @@ export default function RootLayout({
     return (
         <html lang="en">
             <body className={font.className}>
-                <div className="home-background-image">
-                    <div className="home-layout-container">
-                        <Sidebar/>
-                        <div className="home-layout-content-section">
-                            <Navbar />
-                            {children}
-                        </div>
+                <div className="w-full h-full grid grid-cols-[10%,90%] bg-slate-800">
+                    <div className="">
+                        <Sidebar />
+                    </div>
+                    <div className="">
+                        <Navbar />
+                        {children}
                     </div>
                 </div>
             </body>

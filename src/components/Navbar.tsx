@@ -37,31 +37,38 @@ interface navItems {
 }
 export const Navbar = () => {
     return (
-        <nav className={navStyles[`nav-container`]}>
-            <h2 className={navStyles[`nav-logo`]}>Online-Shop</h2>
-            <div className={navStyles[`nav-links-wrapper`]}>
-                {navigationItems.map(({ path, title }) => (
-                    <Link
-                        key={path}
-                        href={path}
-                        className={navStyles[`menu-item`]}>
-                        <span className={navStyles[`nav-menu-item`]}>
-                            {title}
-                        </span>
-                    </Link>
-                ))}
+        <nav className="h-100 grid grid-cols-[20%_60%_20%] sticky top-0 backdrop-blur-md text-gray-500 items-center content-center">
+            {/* Title */}
+            <div className="flex items-center justify-center ">
+                <h2 className="text-3xl">Online-Shop</h2>
             </div>
-            <div className={navStyles[`nav-icons-wrapper`]}>
-                {iconsItems.map(({ path, icon }) => (
-                    <Link
-                        key={path}
-                        href={path}
-                        className={navStyles[`menu-item`]}>
-                        <div className={navStyles[`nav-menu-icon`]}>{icon}</div>
-                    </Link>
-                ))}
+            <div>
+            {/* Medium */}
+                <div className="flex items-center justify-around">
+                    <div className="w-[80%] flex text-xl items-center justify-around">
+                        {navigationItems.map(({ path, title }) => (
+                            <Link
+                                key={path}
+                                href={path}
+                                className="flex mr-3 ">
+                                {title}
+                            </Link>
+                        ))}
+                    </div>
+                    <div className="w-[20%] flex text-xl items-center justify-around">
+                        {iconsItems.map(({ path, icon }) => (
+                            <Link
+                                key={path}
+                                href={path}
+                                className="">
+                                {icon}
+                            </Link>
+                        ))}
+                    </div>
+                </div>
             </div>
-            <div className={navStyles[`nav-cart-item`]}>
+            {/* Bag Icon */}
+            <div className="">
             <FiShoppingBag size={20} />
             </div>
         </nav>
